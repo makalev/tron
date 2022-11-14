@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* modal */
+#comebacker {
+	background: url(../img/bgexit.png);
+    position: fixed;
+    left: 0;
+    top: 0; 
+    z-index: 9999;
+    width: 100%;
+    height: 100%; 
+	overflow: auto;
+	display: none;
+}   
+
+#comebacker .close-undermodal {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+#comebacker .close-over {
+	background: url(../img/close.png) no-repeat 0 0;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+
+#comebacker .close-over:hover {
+	background-position: 0 bottom;
+} 
+
+#comebacker .over-window {
+	background: #fff;
+    cursor: default;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    left: 0;
+	right: 0; 
+	top: 10%;
+    margin: 0 auto;
+    position: fixed;
+	padding: 40px 15px;
+    max-width: 560px;
+    z-index: 9999;
+	position: relative;
+	font-family: 'Libre Baskerville', serif;
+}
+
+#comebacker .over-window img {
+	max-height: 460px;
+	width: 100%;
+}
+
+#comebacker .title-comebacker {
+	font-size: 28px;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	padding: 0 0 30px 0;
+}
+
+#comebacker .form input[type="text"] {
+	background: #fff;
+	border: 1px solid #a5a5a5;
+	outline: none;
+	height: 45px;
+	line-height: 45px;
+	font-size: 18px;
+	font-family: 'Libre Baskerville', serif;
+	width: 100%;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	padding: 0 10px;
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+#comebacker .form input[type="text"]:focus {
+	border: 1px solid #c00;
+}
+
+#comebacker .form input[type="submit"] {
+	background: #c00;
+	cursor: pointer;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	outline: none;
+	height: 50px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Libre Baskerville', serif;
+	width: 100%; 
+	display: block;
+	margin: 0 auto 0 auto;
+	border: 0px;
+	color: #ffffff;
+}
+
+#comebacker .form input[type="submit"]:hover {
+	background: rgb(236, 65, 65);
+}
+
+.comebackerhidden {
+	overflow: hidden;
+} 
+
+@media(max-width:768px) {
+	#comebacker .title-comebacker {
+		font-size: 24px;
+	}
+	#comebacker .form input[type="text"],
+	#comebacker .form input[type="submit"] {
+		font-size: 20px;
+	}
+}
+
+@media (max-width:576px) {
+	#comebacker .over-window {
+		top: 5%;
+	}
+	#comebacker .title-comebacker {
+		font-size: 18px;
+	}
+	#comebacker .form input[type="text"],
+	#comebacker .form input[type="submit"] {
+		font-size: 14px;
+	}
+}
